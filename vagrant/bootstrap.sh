@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
+# update system
+
 apt-get update
+apt-get -y upgrade
 
 # nginx
 
@@ -18,4 +21,3 @@ apt-get install -y postgresql
 # sudo su - postgres
 # psql -c "CREATE ROLE rss_aggregator PASSWORD 'aaa' NOSUPERUSER NOCREATEDB NOCREATEROLE INHERIT LOGIN"
 # psql -c "CREATE DATABASE rss_aggregator OWNER rss_aggregator"
-
