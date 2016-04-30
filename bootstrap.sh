@@ -8,8 +8,20 @@ apt-get update
 apt-get -y upgrade
 
 ###
+# install utilities
+###
+
+apt-get install -y tmux autossh
+
+###
 # install essential services
 ###
+
+# python
+
+apt-get install -y python3-pip python3-virtualenv
+
+pip3 install virtualenvwrapper
 
 # nginx
 
