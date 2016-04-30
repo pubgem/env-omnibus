@@ -1,7 +1,10 @@
 # pubgem-host-web
 
-boot:
+up:
 	cd vagrant && vagrant up
+
+ssh:
+	cd vagrant && vagrant ssh
 
 provision:
 	cd vagrant && vagrant reload --provision
