@@ -1,13 +1,13 @@
 # pubgem-host-web
 
 up:
-	cd vagrant && vagrant up
+	vagrant up
 
 ssh:
-	cd vagrant && vagrant ssh
+	vagrant ssh
 
 provision:
-	cd vagrant && vagrant reload --provision
+	vagrant reload --provision
 
 requirements:
 	vagrant box add ubuntu/xenial64
