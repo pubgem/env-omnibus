@@ -68,6 +68,10 @@ Vagrant.configure(2) do |config|
   #   sudo apt-get update
   #   sudo apt-get install -y apache2
   # SHELL
+
+  config.vm.synced_folder ".", "/vagrant", disabled: true
+  config.vm.synced_folder ".", "/env-omnibus"
   config.vm.provision :shell, path: "bootstrap.sh"
+  config.vm.provision :shell, path: "applications.sh"
 
 end
