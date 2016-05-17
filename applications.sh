@@ -19,7 +19,10 @@ exec sudo -i -u rss-aggregator /bin/bash - << eof
     mkvirtualenv -a ~/rss-aggregator rss-aggregator
     workon rss-aggregator
     make install db test
+    # bin/manage.py rssfeed_load_list --file ~/rss-aggregator/tests/data/sample_apa_journals.json
 eof
+
+# crontab -e /home/rss-aggregator/rss-aggregator/etc/crontab.txt
 
 ###
 # citation-curator
