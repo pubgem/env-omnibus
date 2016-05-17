@@ -47,5 +47,6 @@ apt-get install -y postgresql
 mkdir /etc/skel/.ssh
 chmod 500 /etc/skel/.ssh
 cp /env-omnibus/files/.bashrc /etc/skel
+cp /env-omnibus/files/.tmux.conf /etc/skel
 
 # rm -rf /env-omnibus
