@@ -29,7 +29,7 @@ ln -s /etc/nginx/sites-available/pubgem /etc/nginx/sites-enabled
 service nginx restart
 
 # configure systemd to start aggregation and webapp processes
-cp /home/rss-aggregator/rss-aggregator/etc/systemd/* /etc/systemd/system/
+cp /env-omnibus/files/systemd/* /etc/systemd/system/
 cp /home/rss-aggregator/rss-aggregator/etc/conf/production.conf /etc/systemd/system/rss-aggregator.conf
 
 systemctl daemon-reload
